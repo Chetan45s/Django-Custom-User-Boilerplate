@@ -1,0 +1,159 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+  <!-- Meta Tags -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/gvsslogo.jpeg' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/gvsslogo.jpeg' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/gvsslogo.jpeg' %}">
+
+  <!-- Page Title -->
+  <title>GVSS</title>
+  <!-- Favicon and Touch Icons -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Stylesheet -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/jquery-ui.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/css-plugin-collections.css' %}" rel="stylesheet" />
+  <!-- CSS | megamenu skins -->
+  <link href="{% static 'css/navbarmenu.css' %}" rel="stylesheet" />
+  <link id="menuzord-menu-skins" href="{% static 'css/rounded-boxed.css' %}" rel="stylesheet" />
+  <!-- CSS | Main style file -->
+  <link href="{% static 'css/style-main.css' %}" rel="stylesheet" type="text/css">
+  <!-- CSS | Custom Margin Padding Collection -->
+  <link href="{% static 'css/custom-bootstrap-margin-padding.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/iec-style.css' %}" rel="stylesheet" type="text/css">
+  <!-- CSS | Theme Color-->
+  <link href="{% static 'css/custom-color.css' %}" rel="stylesheet" type="text/css">
+  <!-- CSS | Responsive media queries -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/meri.css' %}" rel="stylesheet" type="text/css">
+  <!-- external javascripts -->
+  <script src="{% static 'js/jquery-2.2.4.min.js' %}"></script>
+  <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <!-- JS | jquery plugin collection for this theme -->
+  <script src="{% static 'js/jquery-plugin-collection.js' %}"></script>
+</head>
+
+
+<body id="no-scroll" class="has-fixed-footer">
+
+    <header>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-md-8 title-left">
+            <div class="logoAnimation-wrapper">
+              <h3 class="ar-fontfamily">Django User Login BoilerPlate</h3>
+              <h3 class="ar-fontfamily">BY. Chetan45s</h3>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-4">
+              <div class="title-right">
+                <a href="https://github.com/Chetan45s"><span> Chetan45s </span></a>
+                <br>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="mynavbar" id="mynavbar1">
+        <nav>
+          <ul class="main-list">
+
+            {% if user.is_authenticated %}
+              <li class="link"><a href="/logout" class="toggle">Logout</a></li>
+            {% else %}
+              <li class="link"><a href="/login" class="toggle">Login</a></li>
+              <li class="link"><a href="/signup" class="toggle">Sign Up</a></li>
+            {% endif %}
+          </ul>
+
+        </nav>
+      </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+    <!-- Footer -->
+
+     <footer id="footer" class="footer" data-bg-color="#212331">
+      <div class="container pt-50 pb-15">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="widget dark">
+              <h3 class="text-white text-center mb-10 mt-0">Django User Login BoilerPlate</h3>
+              <ul class="list-inline mt-5 text-center">
+                <li > <i class="fa fa-envelope-o text-white mr-5"></i>  <a class="text-gray" href="mailto:">chetansalmotra45@gmail.com </a>  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  <div class="footer-bottom" data-bg-color="#2b2d3b">
+    <div class="container pt-20 pb-20">
+          <p class="font-13 text-black-777 m-0 sm-text-center">Copyright © 2021 Chetan45s. All Rights Reserved.
+          </p>
+    </div>
+  </div>
+  </footer>
+
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(document).mouseup(function (e) {
+        if ($(".showhide").css('display') != 'none') {
+          var menu = $('.menuzord-menu');
+          if (!menu.is(e.target) // The target of the click isn't the container.
+            &&
+            menu.has(e.target).length === 0) // Nor a child element of the container
+          {
+            menu.slideUp();
+          }
+        }
+      });
+    });
+    $(window).load(function () {
+      var heights = $(".owl-item .item article .entry-content").map(function () {
+        return $(this).height();
+      }).get();
+      maxHeight = Math.max.apply(null, heights);
+      $(".owl-item .item article .entry-content").height(maxHeight);
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.megamenu.megamenu-bg-img').removeClass('nv');
+    });
+  </script>
+  <script src="{% static 'js/custom.js' %}"></script>
+  <script src="{% static 'js/announcement.js' %}"></script>
+  <script src="{% static 'js/meri.js' %}"></script>
+  <script>
+    $(window).load(function (e) {
+      $("#bn1").breakingNews({
+        effect: "slide-h",
+        autoplay: true,
+        timer: 5000,
+        color: "red"
+      });
+    });
+  </script>
+</body>
+</html>

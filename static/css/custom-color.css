@@ -1,0 +1,272 @@
+
+.menuzord .menuzord-menu > li.active > a,
+.menuzord .menuzord-menu > li:hover > a,
+.menuzord .menuzord-menu ul.dropdown li:hover > a {
+  background: #db322a;
+  color: #fff;
+}
+.gallery-isotope.default-animation-effect .gallery-item .overlay-shade {
+  background: #212331;
+}
+.line-bottom:after,
+.widget .line-bottom:after,
+.widget .line-bottom:after {
+  border: 1px solid #212331;
+}
+/* -------- bg-theme-color ---------- */
+.bg-theme-colored {
+  background-color: #212331 !important;
+}
+.btn-default.btn-theme-colored {
+  color: #212331;
+  background-color: #fff;
+  border-color: #212331;
+}
+.btn-default.btn-theme-colored:focus,
+.btn-default.btn-theme-colored.focus {
+  color: #212331;
+  background-color: #e6e6e6;
+  border-color: #000000;
+}
+.btn-default.btn-theme-colored:hover {
+  color: #212331;
+  background-color: #e6e6e6;
+  border-color: #08090c;
+}
+.btn-default.btn-theme-colored:active,
+.btn-default.btn-theme-colored.active,
+.open > .dropdown-toggle.btn-default.btn-theme-colored {
+  color: #212331;
+  background-color: #e6e6e6;
+  border-color: #08090c;
+}
+.btn-default.btn-theme-colored:active:hover,
+.btn-default.btn-theme-colored.active:hover,
+.open > .dropdown-toggle.btn-default.btn-theme-colored:hover,
+.btn-default.btn-theme-colored:active:focus,
+.btn-default.btn-theme-colored.active:focus,
+.open > .dropdown-toggle.btn-default.btn-theme-colored:focus,
+.btn-default.btn-theme-colored:active.focus,
+.btn-default.btn-theme-colored.active.focus,
+.open > .dropdown-toggle.btn-default.btn-theme-colored.focus {
+  color: #212331;
+  background-color: #d4d4d4;
+  border-color: #000000;
+}
+.btn-default.btn-theme-colored:active,
+.btn-default.btn-theme-colored.active,
+.open > .dropdown-toggle.btn-default.btn-theme-colored {
+  background-image: none;
+}
+.btn-default.btn-theme-colored.disabled:hover,
+.btn-default.btn-theme-colored[disabled]:hover,
+fieldset[disabled] .btn-default.btn-theme-colored:hover,
+.btn-default.btn-theme-colored.disabled:focus,
+.btn-default.btn-theme-colored[disabled]:focus,
+fieldset[disabled] .btn-default.btn-theme-colored:focus,
+.btn-default.btn-theme-colored.disabled.focus,
+.btn-default.btn-theme-colored[disabled].focus,
+fieldset[disabled] .btn-default.btn-theme-colored.focus {
+  background-color: #fff;
+  border-color: #212331;
+}
+.btn-default.btn-theme-colored:hover,
+.btn-default.btn-theme-colored:active,
+.btn-default.btn-theme-colored:focus {
+  background-color: #212331;
+  border-color: #212331;
+  color: #fff;
+}
+.icon-theme-colored a {
+  color: #212331;
+}
+.icon-theme-colored.icon-bordered a {
+  border-color: #212331;
+}
+.icon-theme-colored.icon-bordered a:hover {
+  background-color: #212331;
+  color: #fff;
+}
+.icon-theme-colored.icon-dark a {
+  background-color: #212331;
+  color: #fff;
+}
+.icon-theme-colored.icon-dark a:hover {
+  background-color: #0c0d13;
+  color: #0c0d13;
+}
+.icon-theme-colored.icon-dark.icon-bordered a {
+  border-color: #212331;
+  color: #212331;
+}
+.icon-theme-colored.icon-dark.icon-bordered a:hover {
+  background-color: #212331;
+  border-color: #212331;
+  color: #fff;
+}
+.icon-theme-colored a:hover {
+  color: #0c0d13;
+}
+.panel-group.accordion-icon-filled.accordion-icon-left.accordion-icon-filled-theme-colored .panel-heading .panel-title a:before {
+  background-color: #212331;
+}
+.panel-group.accordion-icon-filled.accordion-icon-right.accordion-icon-filled-theme-colored .panel-heading .panel-title a:after {
+  background-color: #212331;
+}
+/* -------- Text Theme Color ---------- */
+.text-theme-colored2 {
+  color: #436a7d !important;
+}
+.btn-default.btn-theme-colored2 {
+  color: #436a7d ;
+  background-color: #fff;
+  border-color: #db322a;
+}
+.btn-default.btn-theme-colored2:focus,
+.btn-default.btn-theme-colored2.focus {
+  color: #6066d1;
+  background-color: #e6e6e6;
+  border-color: #db322a;
+}
+.btn-default.btn-theme-colored2:hover {
+  color: #6066d1;
+  background-color: #e6e6e6;
+  border-color: #db322a;
+}
+.btn-default.btn-theme-colored2:active,
+.btn-default.btn-theme-colored2.active,
+.open > .dropdown-toggle.btn-default.btn-theme-colored2 {
+  color: #db322a;
+  background-color: #e6e6e6;
+  border-color: #6066d1;
+}
+.btn-default.btn-theme-colored2:active:hover,
+.btn-default.btn-theme-colored2.active:hover,
+.open > .dropdown-toggle.btn-default.btn-theme-colored2:hover,
+.btn-default.btn-theme-colored2:active:focus,
+.btn-default.btn-theme-colored2.active:focus,
+.open > .dropdown-toggle.btn-default.btn-theme-colored2:focus,
+.btn-default.btn-theme-colored2:active.focus,
+.btn-default.btn-theme-colored2.active.focus,
+.open > .dropdown-toggle.btn-default.btn-theme-colored2.focus {
+  color: #db322a;
+  background-color: #d4d4d4;
+  border-color: #6066d1;
+}
+.btn-default.btn-theme-colored2:active,
+.btn-default.btn-theme-colored2.active,
+.open > .dropdown-toggle.btn-default.btn-theme-colored2 {
+  background-image: none;
+}
+.btn-default.btn-theme-colored2.disabled:hover,
+.btn-default.btn-theme-colored2[disabled]:hover,
+fieldset[disabled] .btn-default.btn-theme-colored2:hover,
+.btn-default.btn-theme-colored2.disabled:focus,
+.btn-default.btn-theme-colored2[disabled]:focus,
+fieldset[disabled] .btn-default.btn-theme-colored2:focus,
+.btn-default.btn-theme-colored2.disabled.focus,
+.btn-default.btn-theme-colored2[disabled].focus,
+fieldset[disabled] .btn-default.btn-theme-colored2.focus {
+  background-color: #fff;
+  border-color: #db322a;
+}
+.btn-default.btn-theme-colored2 .badge {
+  color: #fff;
+  background-color: #436a7d ;
+}
+.btn-default.btn-theme-colored2:hover,
+.btn-default.btn-theme-colored2:active,
+.btn-default.btn-theme-colored2:focus {
+  background-color: #436a7d ;
+  border-color: #db322a;
+  color: #fff;
+}
+.btn-theme-colored2 {
+  color: #fff;
+  background-color: #436a7d;
+  border-color: #db322a;
+}
+.btn-theme-colored2:focus,
+.btn-theme-colored2.focus {
+  color: #fff;
+  background-color: #db322a;
+  border-color: #6066d1;
+}
+.btn-theme-colored2:hover {
+  color: #fff;
+  background-color: #db322a;
+  border-color: #6066d1;
+}
+.btn-theme-colored2:active,
+.btn-theme-colored2.active,
+.open > .dropdown-toggle.btn-theme-colored2 {
+  color: #fff;
+  background-color: #db322a;
+  border-color: #436a7d ;
+}
+.btn-theme-colored2:active:hover,
+.btn-theme-colored2.active:hover,
+.open > .dropdown-toggle.btn-theme-colored2:hover,
+.btn-theme-colored2:active:focus,
+.btn-theme-colored2.active:focus,
+.open > .dropdown-toggle.btn-theme-colored2:focus,
+.btn-theme-colored2:active.focus,
+.btn-theme-colored2.active.focus,
+.open > .dropdown-toggle.btn-theme-colored2.focus {
+  color: #fff;
+  background-color: #436a7d;
+  border-color: #6066d1;
+}
+.btn-theme-colored2:active,
+.btn-theme-colored2.active,
+.open > .dropdown-toggle.btn-theme-colored2 {
+  background-image: none;
+}
+.btn-theme-colored2.disabled:hover,
+.btn-theme-colored2[disabled]:hover,
+fieldset[disabled] .btn-theme-colored2:hover,
+.btn-theme-colored2.disabled:focus,
+.btn-theme-colored2[disabled]:focus,
+fieldset[disabled] .btn-theme-colored2:focus,
+.btn-theme-colored2.disabled.focus,
+.btn-theme-colored2[disabled].focus,
+fieldset[disabled] .btn-theme-colored2.focus {
+  background-color: #db322a;
+  border-color: #6066d1;
+}
+.btn-theme-colored2 .badge {
+  color: #436a7d ;
+  background-color: #fff;
+}
+.icon-hover-theme-colored2 a:hover {
+  background-color: #db322a;
+  border-color: #db322a;
+  color: #fff;
+}
+.styled-icons.icon-hover-theme-colored2 a:hover {
+  background-color: #db322a;
+  border-color: #db322a;
+  color: #fff;
+}
+.panel-group.accordion-icon-filled.accordion-icon-left.accordion-icon-filled-theme-colored2 .panel-heading .panel-title a:before {
+  background-color: #436a7d ;
+}
+.panel-group.accordion-icon-filled.accordion-icon-right.accordion-icon-filled-theme-colored2 .panel-heading .panel-title a:after {
+  background-color: #436a7d ;
+}
+
+/*
+ * custom-theme-color2.less
+ * -----------------------------------------------
+*/
+.double-line-bottom-theme-colored-2:after,
+.double-line-bottom-theme-colored-2:before,
+.double-line-bottom-centered-theme-colored-2:after,
+.double-line-bottom-centered-theme-colored-2:before,
+.line-bottom-theme-colored-2:after,
+.line-bottom-centered::after{
+  background: #436a7d ;
+}
+.btn-theme-colored2 {
+  background-color: #436a7d ;
+}

@@ -1,0 +1,56 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block content %}
+
+  <section class="bg-silver-deep">
+    <div class="container pb-40 ar-container-pad">
+      <div class="section-title">
+
+        <div class="row">
+
+          <div class="col-md-7 pricing-table">
+          
+              <h2 class="text-uppercase font-weight-600 mt-0 mt-sm-30 title events-main"> <span class="text-theme-colored2">Current </span>Features </h2>
+              <p>Adding Something</p>
+            <div class="double-line-bottom-theme-colored-2"></div>
+          </div>
+
+          <div class="col-md-5">
+
+            <h2 class="text-uppercase font-weight-600 mt-0 mt-sm-30 title events-main"> <span class="text-theme-colored2">Upcoming </span>Features </h2>
+            <div class="double-line-bottom-theme-colored-2"></div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides0");
+      var dots = document.getElementsByClassName("dot0");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active0", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active0";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+  </script>
+{% endblock %}
+

@@ -1,0 +1,90 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>GVSS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/gvsslogo.jpeg' %}">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="{% static 'css11/normalize.css' %}">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{% static 'css11/main.css' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css11/bootstrap.min.css' %}">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="{% static 'css11/all.min.css' %}">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="{% static 'fonts11/flaticon.css' %}">
+    <!-- Full Calender CSS -->
+    <link rel="stylesheet" href="{% static 'css11/fullcalendar.min.css' %}">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="{% static 'css11/animate.min.css' %}">
+    <!-- Data Table CSS -->
+    <link rel="stylesheet" href="{% static 'css11/jquery.dataTables.min.css' %}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css11/style.css' %}">
+    <!-- Modernize js -->
+    <script src="{% static 'js11/modernizr-3.6.0.min.js' %}"></script>
+</head>
+
+<body>
+
+    <div class="login-page-wrap">
+        <div class="login-page-content">
+            <div class="login-box">
+
+                <form method="post" class="login-form">
+                    {% csrf_token %}
+                    {{ form.non_field_errors }}
+                    <div class="form-group">
+                        {{ form.email.errors }}
+                        <label for="id_email">Email</label>
+                        <input type="email" name="email" maxlength="255" required id="id_email" placeholder="Enter Email" class="form-control">
+                        <i class="far fa-envelope"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="id_password">Password</label>
+                        <input  type="password" name="password" required id="id_password" placeholder="Enter password" class="form-control">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_password_2">Confirm Password</label>
+                        <input type="password" name="password_2" required id="id_password_2" placeholder="Enter password" class="form-control">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="form-group d-flex align-items-center justify-content-between">
+                        <div class="form-check">
+
+                        </div>
+                        <a href="#" class="forgot-btn">Forgot Password?</a>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="login-btn">Sign Up</button>
+                    </div>
+                    <a href="{% url 'login' %}" class="forgot-btn">Already Have Account?</a>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Login Page End Here -->
+    <!-- jquery-->
+    <script src="{% static 'js11/jquery-3.3.1.min.js' %}"></script>
+    <!-- Plugins js -->
+    <script src="{% static 'js11/plugins.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js11/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js11/bootstrap.min.js' %}"></script>
+    <!-- Scroll Up Js -->
+    <script src="{% static 'js11/jquery.scrollUp.min.js' %}"></script>
+    <!-- Custom Js -->
+    <script src="{% static 'js11/main.js' %}"></script>
+
+</body>
+
+</html>
